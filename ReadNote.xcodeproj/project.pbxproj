@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BD85EF11CD49EE600FFE592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD85EF01CD49EE600FFE592 /* AppDelegate.m */; };
+		0BD85EF51CD49F3500FFE592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD85EF31CD49F3500FFE592 /* Assets.xcassets */; };
+		0BD85EF61CD49F3500FFE592 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BD85EF41CD49F3500FFE592 /* Info.plist */; };
+		0BD85EF81CD49F5C00FFE592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD85EF71CD49F5C00FFE592 /* main.m */; };
+		0BD85EFB1CD49F6600FFE592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD85EF91CD49F6600FFE592 /* LaunchScreen.storyboard */; };
+		0BD85F051CD4A16B00FFE592 /* RNRootViewConroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD85F041CD4A16B00FFE592 /* RNRootViewConroller.m */; };
+		0BD85F081CD4A23400FFE592 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD85F071CD4A23400FFE592 /* WebKit.framework */; };
+		0BD85F0B1CD4A28600FFE592 /* RNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD85F0A1CD4A28600FFE592 /* RNTabBarController.m */; };
+		0BD85F0F1CD4BAF800FFE592 /* RNTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD85F0E1CD4BAF800FFE592 /* RNTableViewController.m */; };
+		0BDFC8361CD731CD0027CC45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDFC8351CD731CD0027CC45 /* UIKit.framework */; };
+		0BDFC8391CD771EA0027CC45 /* RNHorizonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFC8381CD771EA0027CC45 /* RNHorizonalTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BD85ED01CD4821600FFE592 /* ReadNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BD85EEF1CD49EE600FFE592 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0BD85EF01CD49EE600FFE592 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0BD85EF31CD49F3500FFE592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ReadNote/Assets.xcassets; sourceTree = "<group>"; };
+		0BD85EF41CD49F3500FFE592 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReadNote/Info.plist; sourceTree = "<group>"; };
+		0BD85EF71CD49F5C00FFE592 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReadNote/main.m; sourceTree = "<group>"; };
+		0BD85EFA1CD49F6600FFE592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadNote/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0BD85F031CD4A16B00FFE592 /* RNRootViewConroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNRootViewConroller.h; sourceTree = "<group>"; };
+		0BD85F041CD4A16B00FFE592 /* RNRootViewConroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNRootViewConroller.m; sourceTree = "<group>"; };
+		0BD85F071CD4A23400FFE592 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0BD85F091CD4A28600FFE592 /* RNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTabBarController.h; sourceTree = "<group>"; };
+		0BD85F0A1CD4A28600FFE592 /* RNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTabBarController.m; sourceTree = "<group>"; };
+		0BD85F0D1CD4BAF800FFE592 /* RNTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTableViewController.h; sourceTree = "<group>"; };
+		0BD85F0E1CD4BAF800FFE592 /* RNTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTableViewController.m; sourceTree = "<group>"; };
+		0BDFC8351CD731CD0027CC45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0BDFC8371CD771EA0027CC45 /* RNHorizonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNHorizonalTableViewController.h; sourceTree = "<group>"; };
+		0BDFC8381CD771EA0027CC45 /* RNHorizonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNHorizonalTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BD85ECD1CD4821600FFE592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFC8361CD731CD0027CC45 /* UIKit.framework in Frameworks */,
+				0BD85F081CD4A23400FFE592 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BD85EC71CD4821600FFE592 = {
+			isa = PBXGroup;
+			children = (
+				0BD85EEB1CD49D3A00FFE592 /* Classes */,
+				0BD85F061CD4A21A00FFE592 /* Frameworks */,
+				0BD85ED11CD4821600FFE592 /* Products */,
+				0BD85EF21CD49F1F00FFE592 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		0BD85ED11CD4821600FFE592 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BD85ED01CD4821600FFE592 /* ReadNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BD85EEB1CD49D3A00FFE592 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0BD85F001CD4A15500FFE592 /* Models */,
+				0BD85F011CD4A15500FFE592 /* ViewConrollers */,
+				0BD85F021CD4A15500FFE592 /* Views */,
+				0BD85EFC1CD4A0FE00FFE592 /* Main */,
+				0BD85EEE1CD49EC700FFE592 /* AppDelegate */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		0BD85EEE1CD49EC700FFE592 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0BD85EEF1CD49EE600FFE592 /* AppDelegate.h */,
+				0BD85EF01CD49EE600FFE592 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			path = Classes/AppDelegate;
+			sourceTree = "<group>";
+		};
+		0BD85EF21CD49F1F00FFE592 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BD85EF91CD49F6600FFE592 /* LaunchScreen.storyboard */,
+				0BD85EF71CD49F5C00FFE592 /* main.m */,
+				0BD85EF31CD49F3500FFE592 /* Assets.xcassets */,
+				0BD85EF41CD49F3500FFE592 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0BD85EFC1CD4A0FE00FFE592 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0BD85F031CD4A16B00FFE592 /* RNRootViewConroller.h */,
+				0BD85F041CD4A16B00FFE592 /* RNRootViewConroller.m */,
+				0BD85F091CD4A28600FFE592 /* RNTabBarController.h */,
+				0BD85F0A1CD4A28600FFE592 /* RNTabBarController.m */,
+			);
+			name = Main;
+			path = Classes/Main;
+			sourceTree = "<group>";
+		};
+		0BD85F001CD4A15500FFE592 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = Classes/Models;
+			sourceTree = "<group>";
+		};
+		0BD85F011CD4A15500FFE592 /* ViewConrollers */ = {
+			isa = PBXGroup;
+			children = (
+				0BD85F0C1CD4BA4500FFE592 /* BaseControllers */,
+			);
+			name = ViewConrollers;
+			path = Classes/ViewConrollers;
+			sourceTree = "<group>";
+		};
+		0BD85F021CD4A15500FFE592 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = Classes/Views;
+			sourceTree = "<group>";
+		};
+		0BD85F061CD4A21A00FFE592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BDFC8351CD731CD0027CC45 /* UIKit.framework */,
+				0BD85F071CD4A23400FFE592 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BD85F0C1CD4BA4500FFE592 /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BD85F0D1CD4BAF800FFE592 /* RNTableViewController.h */,
+				0BD85F0E1CD4BAF800FFE592 /* RNTableViewController.m */,
+				0BDFC8371CD771EA0027CC45 /* RNHorizonalTableViewController.h */,
+				0BDFC8381CD771EA0027CC45 /* RNHorizonalTableViewController.m */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BD85ECF1CD4821600FFE592 /* ReadNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BD85EE71CD4821600FFE592 /* Build configuration list for PBXNativeTarget "ReadNote" */;
+			buildPhases = (
+				0BD85ECC1CD4821600FFE592 /* Sources */,
+				0BD85ECD1CD4821600FFE592 /* Frameworks */,
+				0BD85ECE1CD4821600FFE592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadNote;
+			productName = ReadNote;
+			productReference = 0BD85ED01CD4821600FFE592 /* ReadNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BD85EC81CD4821600FFE592 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = tanzk;
+				TargetAttributes = {
+					0BD85ECF1CD4821600FFE592 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 0BD85ECB1CD4821600FFE592 /* Build configuration list for PBXProject "ReadNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BD85EC71CD4821600FFE592;
+			productRefGroup = 0BD85ED11CD4821600FFE592 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BD85ECF1CD4821600FFE592 /* ReadNote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BD85ECE1CD4821600FFE592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BD85EFB1CD49F6600FFE592 /* LaunchScreen.storyboard in Resources */,
+				0BD85EF61CD49F3500FFE592 /* Info.plist in Resources */,
+				0BD85EF51CD49F3500FFE592 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BD85ECC1CD4821600FFE592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFC8391CD771EA0027CC45 /* RNHorizonalTableViewController.m in Sources */,
+				0BD85EF81CD49F5C00FFE592 /* main.m in Sources */,
+				0BD85EF11CD49EE600FFE592 /* AppDelegate.m in Sources */,
+				0BD85F051CD4A16B00FFE592 /* RNRootViewConroller.m in Sources */,
+				0BD85F0F1CD4BAF800FFE592 /* RNTableViewController.m in Sources */,
+				0BD85F0B1CD4A28600FFE592 /* RNTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0BD85EF91CD49F6600FFE592 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BD85EFA1CD49F6600FFE592 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BD85EE51CD4821600FFE592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BD85EE61CD4821600FFE592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BD85EE81CD4821600FFE592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReadNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkTech.ReadNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0BD85EE91CD4821600FFE592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReadNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkTech.ReadNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BD85ECB1CD4821600FFE592 /* Build configuration list for PBXProject "ReadNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BD85EE51CD4821600FFE592 /* Debug */,
+				0BD85EE61CD4821600FFE592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BD85EE71CD4821600FFE592 /* Build configuration list for PBXNativeTarget "ReadNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BD85EE81CD4821600FFE592 /* Debug */,
+				0BD85EE91CD4821600FFE592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BD85EC81CD4821600FFE592 /* Project object */;
+}
