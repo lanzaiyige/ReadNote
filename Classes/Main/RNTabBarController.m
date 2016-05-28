@@ -8,7 +8,7 @@
 
 #import "RNTabBarController.h"
 #import "RNTableViewController.h"
-#import <UIKit/UIKit.h>
+#import "RNNoteMainViewController.h"
 
 #define WEAK_SELF __weak typeof(self) weakSelf = self;
 
@@ -23,30 +23,17 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.tabBar.translucent = NO;
-    
-    RNTableViewController *tableVC = [[RNTableViewController alloc] init];
-    RNTableViewController *table1VC = [[RNTableViewController alloc] init];
-    RNTableViewController *table2VC = [[RNTableViewController alloc] init];
-    RNTableViewController *table3VC = [[RNTableViewController alloc] init];
-    
-    self.viewControllers = @[tableVC,table1VC,table2VC,table3VC];
-    
-    self.tabTitles = @[@"笔记",@"消息",@"通知",@"我"];
+    self.tabTitles = @[@"笔记",@"书架",@"通知",@"我"];
     self.tabImages = @[@"tabbar-news", @"tabbar-tweet", @"tabbar-discover", @"tabbar-me"];
     
-    WEAK_SELF
-    [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [obj setTitle:weakSelf.tabTitles[idx]];
-        
-        UIImage *normalImage = [UIImage imageNamed:weakSelf.tabImages[idx]];
-        [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        
-        UIImage *selectImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@-selected",weakSelf.tabImages[idx]]];
-        [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        
-        [obj setImage:normalImage];
-        [obj setSelectedImage:selectImage];
-    }];
+    RNNoteMainViewController *noteVC = [[RNNoteMainViewController alloc] init];
+    noteVC.title = self.tabTitles[0];
+    noteVC.tabBarItem.image = [[UIImage imageNamed:_tabImages[0]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    noteVC.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@-selected",_tabImages[0]]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *noteNav = [[UINavigationController alloc] initWithRootViewController:noteVC];
+    
+    self.viewControllers = @[noteNav];
+    
 }
 
 @end

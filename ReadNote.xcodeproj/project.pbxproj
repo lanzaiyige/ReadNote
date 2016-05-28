@@ -18,6 +18,8 @@
 		0BD85F0F1CD4BAF800FFE592 /* RNTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD85F0E1CD4BAF800FFE592 /* RNTableViewController.m */; };
 		0BDFC8361CD731CD0027CC45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDFC8351CD731CD0027CC45 /* UIKit.framework */; };
 		0BDFC8391CD771EA0027CC45 /* RNHorizonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFC8381CD771EA0027CC45 /* RNHorizonalTableViewController.m */; };
+		0BF26D831CF95E6A00C0B606 /* RNNoteMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF26D821CF95E6A00C0B606 /* RNNoteMainViewController.m */; };
+		5DF9A6CF038401B243D33257 /* libPods-ReadNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2A85A029FFA414BE9CCB8E /* libPods-ReadNote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,11 @@
 		0BDFC8351CD731CD0027CC45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0BDFC8371CD771EA0027CC45 /* RNHorizonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNHorizonalTableViewController.h; sourceTree = "<group>"; };
 		0BDFC8381CD771EA0027CC45 /* RNHorizonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNHorizonalTableViewController.m; sourceTree = "<group>"; };
+		0BF26D811CF95E6A00C0B606 /* RNNoteMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNoteMainViewController.h; sourceTree = "<group>"; };
+		0BF26D821CF95E6A00C0B606 /* RNNoteMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNoteMainViewController.m; sourceTree = "<group>"; };
+		12B459A371A6AD3ED7FD312D /* Pods-ReadNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReadNote/Pods-ReadNote.debug.xcconfig"; sourceTree = "<group>"; };
+		2B07C22B5B85E10878C07AB0 /* Pods-ReadNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReadNote/Pods-ReadNote.release.xcconfig"; sourceTree = "<group>"; };
+		AB2A85A029FFA414BE9CCB8E /* libPods-ReadNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReadNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			files = (
 				0BDFC8361CD731CD0027CC45 /* UIKit.framework in Frameworks */,
 				0BD85F081CD4A23400FFE592 /* WebKit.framework in Frameworks */,
+				5DF9A6CF038401B243D33257 /* libPods-ReadNote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,7 @@
 				0BD85F061CD4A21A00FFE592 /* Frameworks */,
 				0BD85ED11CD4821600FFE592 /* Products */,
 				0BD85EF21CD49F1F00FFE592 /* Resources */,
+				3C0CB523DDD50F289472D7E1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +136,7 @@
 		0BD85F011CD4A15500FFE592 /* ViewConrollers */ = {
 			isa = PBXGroup;
 			children = (
+				0BF26D801CF95E5400C0B606 /* Note */,
 				0BD85F0C1CD4BA4500FFE592 /* BaseControllers */,
 			);
 			name = ViewConrollers;
@@ -146,6 +156,7 @@
 			children = (
 				0BDFC8351CD731CD0027CC45 /* UIKit.framework */,
 				0BD85F071CD4A23400FFE592 /* WebKit.framework */,
+				AB2A85A029FFA414BE9CCB8E /* libPods-ReadNote.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +172,24 @@
 			path = BaseControllers;
 			sourceTree = "<group>";
 		};
+		0BF26D801CF95E5400C0B606 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				0BF26D811CF95E6A00C0B606 /* RNNoteMainViewController.h */,
+				0BF26D821CF95E6A00C0B606 /* RNNoteMainViewController.m */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		3C0CB523DDD50F289472D7E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12B459A371A6AD3ED7FD312D /* Pods-ReadNote.debug.xcconfig */,
+				2B07C22B5B85E10878C07AB0 /* Pods-ReadNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BD85EE71CD4821600FFE592 /* Build configuration list for PBXNativeTarget "ReadNote" */;
 			buildPhases = (
+				E93349E1D5D203B972791953 /* 📦 Check Pods Manifest.lock */,
 				0BD85ECC1CD4821600FFE592 /* Sources */,
 				0BD85ECD1CD4821600FFE592 /* Frameworks */,
 				0BD85ECE1CD4821600FFE592 /* Resources */,
+				B946C829AD3611CD32A6EDC0 /* 📦 Embed Pods Frameworks */,
+				655BDB122963287FF678EAB7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,12 +258,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		655BDB122963287FF678EAB7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadNote/Pods-ReadNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B946C829AD3611CD32A6EDC0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadNote/Pods-ReadNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E93349E1D5D203B972791953 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0BD85ECC1CD4821600FFE592 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0BDFC8391CD771EA0027CC45 /* RNHorizonalTableViewController.m in Sources */,
+				0BF26D831CF95E6A00C0B606 /* RNNoteMainViewController.m in Sources */,
 				0BD85EF81CD49F5C00FFE592 /* main.m in Sources */,
 				0BD85EF11CD49EE600FFE592 /* AppDelegate.m in Sources */,
 				0BD85F051CD4A16B00FFE592 /* RNRootViewConroller.m in Sources */,
@@ -338,6 +419,7 @@
 		};
 		0BD85EE81CD4821600FFE592 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B459A371A6AD3ED7FD312D /* Pods-ReadNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReadNote/Info.plist;
@@ -349,6 +431,7 @@
 		};
 		0BD85EE91CD4821600FFE592 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B07C22B5B85E10878C07AB0 /* Pods-ReadNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReadNote/Info.plist;

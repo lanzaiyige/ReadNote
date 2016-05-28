@@ -12,7 +12,6 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
     int randomR = arc4random_uniform(255);
     int randomG = arc4random_uniform(255);
     int randomB = arc4random_uniform(255);
