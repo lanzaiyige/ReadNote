@@ -10,4 +10,6 @@
 
 @interface UIImageView (RNCornerRadius)
 
++ (UIImage *)imageWithRoundImage:(UIImage *)image size:(CGSize)size radius:(CGFloat)radius;
+
 @end
