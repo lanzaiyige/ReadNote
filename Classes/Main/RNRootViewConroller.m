@@ -21,9 +21,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
-    [self.view setBackgroundColor:[UIColor redColor]];
-    
+
     RNTabBarController *tabBarController = [[RNTabBarController alloc] init];
     [self addChildViewController:tabBarController];
     [self.view addSubview:tabBarController.view];

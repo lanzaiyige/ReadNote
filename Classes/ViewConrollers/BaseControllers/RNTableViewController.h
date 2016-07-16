@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RNTableViewController : UIViewController
+@interface RNTableViewController : UITableViewController
+
+/// 数据源
+@property (strong, nonatomic) NSArray *objects;
 
 @end

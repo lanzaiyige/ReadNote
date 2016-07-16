@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B35E4C91CF9BE9A00ADF75E /* RNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B35E4C81CF9BE9A00ADF75E /* RNTableViewCell.m */; };
+		0B35E4CC1CF9C5FB00ADF75E /* RNNoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B35E4CB1CF9C5FB00ADF75E /* RNNoteTableViewController.m */; };
+		0B35E4D01CF9C88000ADF75E /* RNUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B35E4CF1CF9C88000ADF75E /* RNUtils.m */; };
 		0BD85EF11CD49EE600FFE592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD85EF01CD49EE600FFE592 /* AppDelegate.m */; };
 		0BD85EF51CD49F3500FFE592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD85EF31CD49F3500FFE592 /* Assets.xcassets */; };
 		0BD85EF61CD49F3500FFE592 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BD85EF41CD49F3500FFE592 /* Info.plist */; };
@@ -23,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B35E4C71CF9BE9A00ADF75E /* RNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTableViewCell.h; sourceTree = "<group>"; };
+		0B35E4C81CF9BE9A00ADF75E /* RNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTableViewCell.m; sourceTree = "<group>"; };
+		0B35E4CA1CF9C5FB00ADF75E /* RNNoteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNoteTableViewController.h; sourceTree = "<group>"; };
+		0B35E4CB1CF9C5FB00ADF75E /* RNNoteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNoteTableViewController.m; sourceTree = "<group>"; };
+		0B35E4CE1CF9C88000ADF75E /* RNUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNUtils.h; sourceTree = "<group>"; };
+		0B35E4CF1CF9C88000ADF75E /* RNUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNUtils.m; sourceTree = "<group>"; };
 		0BD85ED01CD4821600FFE592 /* ReadNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD85EEF1CD49EE600FFE592 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0BD85EF01CD49EE600FFE592 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +70,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B35E4C61CF9BE8300ADF75E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0B35E4C71CF9BE9A00ADF75E /* RNTableViewCell.h */,
+				0B35E4C81CF9BE9A00ADF75E /* RNTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0B35E4CD1CF9C87000ADF75E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0B35E4CE1CF9C88000ADF75E /* RNUtils.h */,
+				0B35E4CF1CF9C88000ADF75E /* RNUtils.m */,
+			);
+			name = Utils;
+			path = Classes/Utils;
+			sourceTree = "<group>";
+		};
 		0BD85EC71CD4821600FFE592 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,7 @@
 		0BD85EEB1CD49D3A00FFE592 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0B35E4CD1CF9C87000ADF75E /* Utils */,
 				0BD85F001CD4A15500FFE592 /* Models */,
 				0BD85F011CD4A15500FFE592 /* ViewConrollers */,
 				0BD85F021CD4A15500FFE592 /* Views */,
@@ -146,6 +175,7 @@
 		0BD85F021CD4A15500FFE592 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0B35E4C61CF9BE8300ADF75E /* Cell */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -177,6 +207,8 @@
 			children = (
 				0BF26D811CF95E6A00C0B606 /* RNNoteMainViewController.h */,
 				0BF26D821CF95E6A00C0B606 /* RNNoteMainViewController.m */,
+				0B35E4CA1CF9C5FB00ADF75E /* RNNoteTableViewController.h */,
+				0B35E4CB1CF9C5FB00ADF75E /* RNNoteTableViewController.m */,
 			);
 			path = Note;
 			sourceTree = "<group>";
@@ -313,11 +345,14 @@
 			files = (
 				0BDFC8391CD771EA0027CC45 /* RNHorizonalTableViewController.m in Sources */,
 				0BF26D831CF95E6A00C0B606 /* RNNoteMainViewController.m in Sources */,
+				0B35E4CC1CF9C5FB00ADF75E /* RNNoteTableViewController.m in Sources */,
+				0B35E4D01CF9C88000ADF75E /* RNUtils.m in Sources */,
 				0BD85EF81CD49F5C00FFE592 /* main.m in Sources */,
 				0BD85EF11CD49EE600FFE592 /* AppDelegate.m in Sources */,
 				0BD85F051CD4A16B00FFE592 /* RNRootViewConroller.m in Sources */,
 				0BD85F0F1CD4BAF800FFE592 /* RNTableViewController.m in Sources */,
 				0BD85F0B1CD4A28600FFE592 /* RNTabBarController.m in Sources */,
+				0B35E4C91CF9BE9A00ADF75E /* RNTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

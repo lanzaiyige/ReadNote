@@ -7,15 +7,42 @@
 //
 
 #import "RNTableViewController.h"
+#import "RNTableViewCell.h"
+
+static NSString *const cellIdentifier = @"cellIdentifier";
+
+@interface RNTableViewController ()
+
+@end
 
 @implementation RNTableViewController
 
+- (id)init {
+    self = [super init];
+    if(self) {
+        _objects = [NSArray new];
+    }
+    return self;
+}
+
 - (void)viewDidLoad{
     [super viewDidLoad];
-    int randomR = arc4random_uniform(255);
-    int randomG = arc4random_uniform(255);
-    int randomB = arc4random_uniform(255);
-    self.view.backgroundColor = [UIColor colorWithRed:randomR/255.0 green:randomG/255.0 blue:randomB/255.0 alpha:1];
+    [self.tableView registerClass:[RNTableViewCell class] forCellReuseIdentifier:cellIdentifier];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+#pragma mark - UITableViewDataSource
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    RNTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return  _objects.count;
 }
 
 @end
