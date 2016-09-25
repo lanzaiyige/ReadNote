@@ -16,7 +16,82 @@
 
 @implementation AppDelegate
 
-void (^testBlock)();
+- (void)testLog {
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5 - i; j++) {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
+
+- (void)testLog1 {
+    for (int i = 1; i < 8; i++) {
+        NSInteger number = 4 - abs(i - 4);
+        for (int j = 0; j < number; j++) {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
+
+- (void)testLog2 {
+    for (int i = 0; i < 5; i++) {
+        for (int k = 0; k < i; k++) {
+            printf(" ");
+        }
+        
+        NSInteger number = 8 - i;
+        for (int j = i; j < number; j++) {
+            printf("#");
+        }
+        
+        printf("\n");
+    }
+}
+
+static char convert(int number) {
+    int a[100];
+    int i = 0;
+    int m = 0;
+    
+    int yushu;
+    
+    char hex[16] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+    while (number > 0) {
+        yushu = number % 16;
+        a[i++] = yushu;
+        number = number / 16;
+    }
+    
+    for (int k = i - 1; k >= 0; k--) {
+        m = a[k];
+        printf("%c",hex[m]);
+    }
+    
+    return 0;
+}
+
+- (void)testSemaphore {
+    dispatch_group_t groupQueue = dispatch_group_create();
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(10);
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    for (int i = 0; i < 100; i++) {
+        long wait = dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        NSLog(@"wait:%ld",wait);
+        dispatch_group_async(groupQueue, queue, ^{
+            NSLog(@"%i",i);
+            sleep(2);
+            
+            long signal = dispatch_semaphore_signal(semaphore);
+            NSLog(@"signal:%ld",signal);
+        });
+    }
+    
+    long groupWait = dispatch_group_wait(groupQueue, DISPATCH_TIME_FOREVER);
+    NSLog(@"groupSignal:%ld",groupWait);
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -26,6 +101,9 @@ void (^testBlock)();
     [self.window setRootViewController:testVC];
     
     [self.window makeKeyAndVisible];
+    
+    [self testSemaphore];
+    
     return YES;
 }
 
