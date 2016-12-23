@@ -33,8 +33,7 @@ static NSString *cellIdentifier = @"HorizonalCell";
     
     self.tableView = [UITableView new];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    // 
-    self.tableView.transform = CGAffineTransformMakeRotation(-M_PI_2);
+    
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.bounces = NO;
     self.tableView.pagingEnabled = NO;
@@ -52,12 +51,7 @@ static NSString *cellIdentifier = @"HorizonalCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    cell.transform = CGAffineTransformMakeRotation(M_PI_2);
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    UIViewController *controller = _controllers[indexPath.row];
-    controller.view.frame = cell.bounds;
-    [cell.contentView addSubview:controller.view];
     return cell;
 }
 

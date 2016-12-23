@@ -14,7 +14,6 @@
 		0B4DA8A01D3B5F46004C64A5 /* NSObject+RNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DA89F1D3B5F46004C64A5 /* NSObject+RNModel.m */; };
 		0B4DA8A31D3B7DEF004C64A5 /* RNModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DA8A21D3B7DEF004C64A5 /* RNModelData.m */; };
 		0B4DA8A61D3B7E92004C64A5 /* RNClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DA8A51D3B7E92004C64A5 /* RNClassInfo.m */; };
-		0BA1E39C1D39391500C9F414 /* UIImageView+RNCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA1E39B1D39391500C9F414 /* UIImageView+RNCornerRadius.m */; };
 		0BD85EF11CD49EE600FFE592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD85EF01CD49EE600FFE592 /* AppDelegate.m */; };
 		0BD85EF51CD49F3500FFE592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD85EF31CD49F3500FFE592 /* Assets.xcassets */; };
 		0BD85EF61CD49F3500FFE592 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BD85EF41CD49F3500FFE592 /* Info.plist */; };
@@ -55,8 +54,6 @@
 		0B4DA8A21D3B7DEF004C64A5 /* RNModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNModelData.m; sourceTree = "<group>"; };
 		0B4DA8A41D3B7E92004C64A5 /* RNClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNClassInfo.h; sourceTree = "<group>"; };
 		0B4DA8A51D3B7E92004C64A5 /* RNClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNClassInfo.m; sourceTree = "<group>"; };
-		0BA1E39A1D39391500C9F414 /* UIImageView+RNCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RNCornerRadius.h"; sourceTree = "<group>"; };
-		0BA1E39B1D39391500C9F414 /* UIImageView+RNCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RNCornerRadius.m"; sourceTree = "<group>"; };
 		0BD85ED01CD4821600FFE592 /* ReadNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD85EEF1CD49EE600FFE592 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0BD85EF01CD49EE600FFE592 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,8 +99,6 @@
 			children = (
 				0B35E4C71CF9BE9A00ADF75E /* RNTableViewCell.h */,
 				0B35E4C81CF9BE9A00ADF75E /* RNTableViewCell.m */,
-				0BA1E39A1D39391500C9F414 /* UIImageView+RNCornerRadius.h */,
-				0BA1E39B1D39391500C9F414 /* UIImageView+RNCornerRadius.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -386,7 +381,6 @@
 				0B35E4CC1CF9C5FB00ADF75E /* RNNoteTableViewController.m in Sources */,
 				0B35E4D01CF9C88000ADF75E /* RNUtils.m in Sources */,
 				0B4DA8A31D3B7DEF004C64A5 /* RNModelData.m in Sources */,
-				0BA1E39C1D39391500C9F414 /* UIImageView+RNCornerRadius.m in Sources */,
 				0B4DA8A61D3B7E92004C64A5 /* RNClassInfo.m in Sources */,
 				0BD85EF81CD49F5C00FFE592 /* main.m in Sources */,
 				0BD85EF11CD49EE600FFE592 /* AppDelegate.m in Sources */,
